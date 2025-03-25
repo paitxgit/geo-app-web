@@ -31,7 +31,8 @@
         height: 100vh;
         flex-direction: column;
         text-align: center;
-        padding: 30px;
+        padding: 2rem;
+        font-size: 1rem; /* Base font size */
       }
 
       .error-container {
@@ -39,7 +40,7 @@
         color: #333;
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        padding: 50px;
+        padding: 2rem;
         width: 100%;
         max-width: 600px;
         margin: auto;
@@ -55,7 +56,7 @@
         font-family: "Montserrat", sans-serif;
         font-size: 2.5rem;
         color: #e53935;
-        margin-bottom: 20px;
+        margin-bottom: 1rem;
         text-transform: uppercase;
         font-weight: 700;
       }
@@ -64,7 +65,7 @@
         font-size: 1.1rem;
         color: #555;
         line-height: 1.6;
-        margin-bottom: 30px;
+        margin-bottom: 1.5rem;
         font-weight: 400;
       }
 
@@ -78,6 +79,7 @@
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.3s ease;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
       }
 
       button:hover {
@@ -90,39 +92,68 @@
       }
 
       footer {
-        margin-top: 30px;
+        margin-top: 2rem;
         font-size: 0.9rem;
         color: #777;
         font-weight: 300;
       }
 
-      @media (max-width: 600px) {
+      /* Responsividade para telas pequenas (mobile) */
+      @media (max-width: 400px) {
+        body {
+          font-size: 0.85rem; /* Diminui o tamanho da fonte para telas menores */
+        }
+
         h1 {
-          font-size: 2rem;
+          font-size: 1.8rem; /* Reduzir o tamanho do título em telas pequenas */
+          margin-bottom: 1rem;
         }
 
         p {
-          font-size: 1rem;
+          font-size: 1rem; /* Ajuste do tamanho da fonte do parágrafo */
         }
 
         button {
-          width: 100%;
-          padding: 15px;
-          font-size: 1.2rem;
+          width: 100%; /* Botão ocupa 100% da largura da tela */
+          font-size: 1.1rem;
+          padding: 14px;
         }
 
         .error-container {
-          padding: 30px;
+          padding: 1.5rem; /* Ajusta o padding do container para telas menores */
         }
       }
 
+      /* Responsividade para telas médias (tablets) */
       @media (max-width: 768px) {
         h1 {
           font-size: 2.2rem;
         }
 
         .error-container {
-          padding: 35px;
+          padding: 1.8rem;
+        }
+      }
+
+      @media (max-width: 410px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .error-container {
+          padding: 1.8rem;
+        }
+      }
+
+      @media (max-width: 315px) {
+        h1,
+        p,
+        button {
+          font-size: 1rem;
+        }
+
+        .error-container {
+          padding: 1.8rem;
         }
       }
     </style>
