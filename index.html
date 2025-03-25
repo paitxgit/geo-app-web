@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment App</title>
+    <link
+      rel="icon"
+      href="https://genfavicon.com/tmp/icon_a2701e46411c88b292542b6186699a3c.ico"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+      }
+
+      .error-container {
+        background-color: #fff;
+        color: #333;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 50px;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .error-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5rem;
+        color: #e53935;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+
+      button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        background-color: #3f51b5;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+        background-color: #283593;
+        transform: translateY(-3px);
+      }
+
+      button:active {
+        transform: translateY(2px);
+      }
+
+      footer {
+        margin-top: 30px;
+        font-size: 0.9rem;
+        color: #777;
+        font-weight: 300;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        button {
+          width: 100%;
+          padding: 15px;
+          font-size: 1.2rem;
+        }
+
+        .error-container {
+          padding: 30px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        .error-container {
+          padding: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <h1>Erro ao exibir comprovante de pagamento</h1>
+      <p>
+        Verifique as permissões do navegador para que o site funcione
+        corretamente.
+      </p>
+      <button onclick="window.location.reload()">Tentar novamente</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Payment App. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script.obfuscated.js"></script>
+  </body>
+</html>
